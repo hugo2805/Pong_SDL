@@ -5,6 +5,10 @@
 #include <stdio.h>
 #include "Window.h"
 #include "Struct.h"
+#include <stdlib.h>
+#include <time.h>
+
+
 
 
 using namespace std;
@@ -50,10 +54,54 @@ int initBall()
 
 int AfficheBall()
 {
-    //posBall.n_x = WIN_WIDTH / 2 - BallWidth / 2;
-    //posBall.n_y = WIN_HEIGHT / 2 - BallHeight / 2;
+    posBall.n_x -= 5;
+    posBall.n_y -= 5;
     SDL_Rect dest = { posBall.n_x ,posBall.n_y , BallWidth, BallHeight };
     SDL_RenderCopy(rendu.pRenderer, Ball.pTexture, NULL, &dest);
 
+    return 1;
+}
+
+int collisionHaut(vect2D posBall)
+{
+    if (posBall.n_y >= 1200) {
+
+    }
+    return 1;
+}
+
+int DeplacementDiag1()
+{
+    srand(time(NULL));
+    int n = rand() % 6;
+    posBall.n_x -= 5;
+    posBall.n_y -= n;
+    return 1;
+}
+
+int DeplacementDiag2()
+{
+    srand(time(NULL));
+    int n = rand() % 6;
+    posBall.n_x += 5;
+    posBall.n_y -= n;
+    return 1;
+}
+
+int DeplacementDiag3()
+{
+    srand(time(NULL));
+    int n = rand() % 6;
+    posBall.n_x -= 5;
+    posBall.n_y += n;
+    return 1;
+}
+
+int DeplacementDiag4()
+{
+    srand(time(NULL));
+    int n = rand() % 6;
+    posBall.n_x += 5;
+    posBall.n_y += n;
     return 1;
 }

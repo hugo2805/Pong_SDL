@@ -12,6 +12,7 @@ rendererObject RaquetteD;
 vect2D posRD;
 int RDWidth = 30;
 int RDHeight = 300;
+
 int initRd()
 {
     posRD.n_x = 1150 - RDWidth/2;

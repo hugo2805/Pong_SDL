@@ -12,6 +12,7 @@ rendererObject RaquetteG;
 vect2D posRG;
 int RGWidth = 30;
 int RGHeight = 300;
+
 int initRg()
 {
     posRG.n_x = 50 + RGWidth / 2;

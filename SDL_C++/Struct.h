@@ -27,8 +27,8 @@ typedef struct rendererObject {
 //Vecteur pour set la position des objets
 typedef struct vect2D {
 
-    float n_x;
-    float n_y;
+    int n_x;
+    int n_y;
 
 }vect2D;
 
@@ -46,8 +46,6 @@ typedef enum controller {
 
     up=1,
     down,
-    Z,
-    S,
     none = 0
 
 }controller;

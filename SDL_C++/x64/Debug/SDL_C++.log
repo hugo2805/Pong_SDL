@@ -1,32 +1,6 @@
 ﻿  main.cpp
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(20,31): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(21,34): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(31,42): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(31,42): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(31,55): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(31,55): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(55,30): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(55,30): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(55,43): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\Ball.h(55,43): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(17,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(18,32): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(27,40): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(27,40): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(27,51): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(27,51): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(51,28): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(51,28): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(51,39): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteGauche.h(51,39): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(17,22): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(18,32): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(27,40): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(27,40): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(27,52): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(27,52): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(51,28): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(51,28): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(51,40): warning C4838: la conversion de 'float' en 'int' requiert une conversion restrictive
-D:\Algo\C++\SDL_C++\SDL_C++\RaquetteD.h(51,40): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
-  SDL_C++.vcxproj -> D:\Algo\C++\SDL_C++\x64\Debug\SDL_C++.exe
+D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(75,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(84,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(93,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(102,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+  SDL_C++.vcxproj -> D:\Algo\C++\Pong_SDL\SDL_C++\x64\Debug\SDL_C++.exe
