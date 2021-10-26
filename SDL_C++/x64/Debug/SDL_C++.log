@@ -1,6 +1,2 @@
-﻿  main.cpp
-D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(75,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(84,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(93,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-D:\Algo\C++\Pong_SDL\SDL_C++\SDL_C++\Ball.h(102,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+﻿  Ball.cpp
   SDL_C++.vcxproj -> D:\Algo\C++\Pong_SDL\SDL_C++\x64\Debug\SDL_C++.exe

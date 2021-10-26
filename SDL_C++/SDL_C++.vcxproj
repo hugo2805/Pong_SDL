@@ -143,11 +143,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RaquetteDroite.cpp" />
+    <ClCompile Include="RaquetteGauche.cpp" />
+    <ClCompile Include="Struct.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.h" />
-    <ClInclude Include="RaquetteD.h" />
+    <ClInclude Include="RaquetteDroite.h" />
     <ClInclude Include="RaquetteGauche.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="Window.h" />

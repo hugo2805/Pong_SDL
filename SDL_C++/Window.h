@@ -1,20 +1,14 @@
 #pragma once
-#include <iostream>
-#include <SDL.h>
-#include <SDL_image.h>
-#include <stdio.h>
 #include "Struct.h"
 
-#define WIN_WIDTH 1200
-#define WIN_HEIGHT 700
 using namespace std;
 
-renderer rendu;
-
-int initWindow()
+int initWindow(renderer* rendu)
 {
-    rendu.pWindow = NULL;
-    rendu.pRenderer = NULL;
+    SDL_Window* win;
+    SDL_Renderer* rend;
+    rendu->setPWindow(NULL);
+    rendu->setPRenderer(NULL);
 
     /* Initialisation simple */
     if (SDL_Init(SDL_INIT_VIDEO) != 0)
@@ -25,13 +19,14 @@ int initWindow()
     else
     {
         /* Création de la fenêtre */
-        rendu.pWindow = SDL_CreateWindow("PONG HUGO EITEL", SDL_WINDOWPOS_UNDEFINED,
+        win = SDL_CreateWindow("PONG HUGO EITEL", SDL_WINDOWPOS_UNDEFINED,
             SDL_WINDOWPOS_UNDEFINED,
-            WIN_WIDTH,
-            WIN_HEIGHT,
+            rendu->getWinWidth(),
+            rendu->getWinHeight(),
             SDL_WINDOW_SHOWN);
-
-        rendu.pRenderer = SDL_CreateRenderer(rendu.pWindow, -1, 0);
+        rendu->setPWindow(win);
+         rend = SDL_CreateRenderer(rendu->getPWindow(), -1, 0);
+         rendu->setPRenderer( rend );
     }
     return 1;
 }

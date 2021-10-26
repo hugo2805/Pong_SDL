@@ -1,56 +1,40 @@
 #pragma once
-#include <iostream>
-#include <SDL.h>
-#include <SDL_image.h>
-#include <stdio.h>
-#include "Window.h"
 #include "Struct.h"
 
 using namespace std;
 
-rendererObject RaquetteG;
-vect2D posRG;
-int RGWidth = 30;
-int RGHeight = 300;
-
-int initRg()
+class RaquetteGauche
 {
-    posRG.n_x = 50 + RGWidth / 2;
-    posRG.n_y = WIN_HEIGHT / 2 - RGHeight / 2;
-    if (rendu.pRenderer)
-    {
-        RaquetteG.pSurface = IMG_Load("../Asset/RG.png");
-        if (RaquetteG.pSurface)
-        {
-            RaquetteG.pTexture = SDL_CreateTextureFromSurface(rendu.pRenderer, RaquetteG.pSurface);
-            if (RaquetteG.pTexture)
-            {
-                SDL_Rect dest = { posRG.n_x, posRG.n_y, RGWidth, RGHeight };
-                SDL_RenderCopy(rendu.pRenderer, RaquetteG.pTexture, NULL, &dest);
-            }
-            else
-            {
-                fprintf(stderr, ":3: Echec de création de la texture : %s ", SDL_GetError());
-            }
-        }
-        else
-        {
-            fprintf(stderr, "Echec de chargement du sprite : %s ", SDL_GetError());
-        }
-    }
-    else
-    {
-        fprintf(stderr, "echec de création du renderer : %s", SDL_GetError());
-    }
+private:
+    rendererObject RaquetteG;
+    Vect2D posRG;
+    int RGWidth;
+    int RGHeight;
 
-    return 1;
-}
+public:
 
-int AfficheRG(vect2D posRG)
-{
-    posRG.n_x = 20;
-    SDL_Rect dest = { posRG.n_x, posRG.n_y, RGWidth, RGHeight };
-    SDL_RenderCopy(rendu.pRenderer, RaquetteG.pTexture, NULL, &dest);
+    //Constructeur
+    RaquetteGauche();
 
-    return 1;
-}
+    //constructeur de copie
+    RaquetteGauche(RaquetteGauche& RG1);
+
+    //destructeur
+    ~RaquetteGauche();
+
+    //Accesseurs
+    rendererObject getRaquetteG();
+    Vect2D getPosRG();
+    int getRGwidth();
+    int getRGheight();
+
+    //Mutateurs
+    void setRaquetteG(rendererObject RaquetteG);
+    void setPosRG(Vect2D PosRG);
+    void setRGWidth(int RGWidth);
+    void setRGHeight(int RGHeight);
+
+    int initRg(renderer* rendu);
+    int AfficheRG(Vect2D* posRG, renderer* rendu);
+
+};
